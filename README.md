@@ -6,16 +6,24 @@ The solution leverages time-series sensor data, feature engineering, and LSTM ne
 Predictive Maintenance | Time-Series Forecasting | Regression | Deep Learning | Industrial AI | Aerospace Analytics
 
 ### Dataset Description
-Dataset: NASA C-MAPSS Turbofan Engine Dataset
+- [x] **Dataset:** NASA C-MAPSS Turbofan Engine Dataset
+- [x] **Data Type:** Multivariate time-series
+- [x] **Features:**
+  - Engine Unit ID,
+  - Operational Cycles,
+  - 3 Operational Settings,
+  - 21 Sensor Measurements.
 
-Data Type: Multivariate time-series
+- [x] **Target Variable:** Remaining Useful Life (RUL)
 
-Features:
-Engine Unit ID,
-Operational Cycles,
-3 Operational Settings,
-21 Sensor Measurements.
+- [x] **Industry Relevance:** Aerospace, Manufacturing, Heavy Machinery, Industrial IoT
 
-Target Variable: Remaining Useful Life (RUL)
+### How does it work?
 
-Industry Relevance: Aerospace, Manufacturing, Heavy Machinery, Industrial IoT
+The data is first cleaned and scaled so the model can learn properly. A neural network with multiple layers is used to find patterns in the data. The model uses Huber Loss, which helps reduce the impact of extreme values. Early stopping is applied so the model stops training once it stops improving. This makes the model more stable, accurate, and reliable.
+- **Loss Function**: Huber Loss  
+- **Optimizer**: Adam  
+- **Preprocessing**: Feature Extraction, Feature scaling
+
+
+
