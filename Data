@@ -1,3 +1,6 @@
 data/README.md
 This folder contains the NASA C-MAPSS turbofan engine dataset used for RUL prediction.
+train_FD001.txt
+test_FD001.txt
+RUL_FD001.txt
 
