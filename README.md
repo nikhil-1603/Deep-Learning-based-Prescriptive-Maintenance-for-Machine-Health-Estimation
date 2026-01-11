@@ -5,25 +5,77 @@ The solution leverages time-series sensor data, feature engineering, and LSTM ne
 ### Key Domains:
 Predictive Maintenance | Time-Series Forecasting | Regression | Deep Learning | Industrial AI | Aerospace Analytics
 
-### Dataset Description
-- [x] **Dataset:** NASA C-MAPSS Turbofan Engine Dataset
-- [x] **Data Type:** Multivariate time-series
-- [x] **Features:**
-  - Engine Unit ID,
-  - Operational Cycles,
-  - 3 Operational Settings,
-  - 21 Sensor Measurements.
+---
+## 🔍 Methodology
 
-- [x] **Target Variable:** Remaining Useful Life (RUL)
+### 1️⃣ Data Preprocessing
+- Handling missing values  
+- Noise filtering  
+- Normalization and scaling  
+- Time-window segmentation  
 
-- [x] **Industry Relevance:** Aerospace, Manufacturing, Heavy Machinery, Industrial IoT
+### 2️⃣ Feature Engineering
+- Statistical features (mean, variance, RMS)  
+- Health indicator extraction  
+- Temporal feature aggregation  
 
-### How does it work?
+### 3️⃣ Deep Learning Models
+- LSTM for long-term temporal dependencies  
+- GRU for efficient sequence learning  
+- CNN-LSTM for spatial-temporal feature learning  
+- Autoencoders for anomaly detection  
 
-The data is first cleaned and scaled so the model can learn properly. A neural network with multiple layers is used to find patterns in the data. The model uses Huber Loss, which helps reduce the impact of extreme values. Early stopping is applied so the model stops training once it stops improving. This makes the model more stable, accurate, and reliable.
-- **Loss Function**: Huber Loss  
-- **Optimizer**: Adam  
-- **Preprocessing**: Feature Extraction, Feature scaling
+### 4️⃣ Prescriptive Maintenance Layer
+- Maintenance decision rules  
+- Failure threshold-based alerts  
+- Maintenance scheduling recommendations  
+
+---
+
+## 🤖 Models Implemented
+
+- Long Short-Term Memory (LSTM)  
+- Gated Recurrent Units (GRU)  
+- Convolutional Neural Networks (CNN)  
+- Autoencoders  
+- Hybrid Deep Learning Architectures  
+
+---
+
+## 📈 Evaluation Metrics
+
+- Root Mean Squared Error (RMSE)  
+- Mean Absolute Error (MAE)  
+- RUL Prediction Accuracy  
+- Precision, Recall, and F1-Score  
+- Anomaly detection performance  
+
+---
+
+## 🧪 Experimental Results
+
+- Early fault detection achieved with high accuracy  
+- Improved RUL prediction compared to traditional ML models  
+- Reduced unexpected machine downtime  
+- Reliable decision support for maintenance planning  
+
+---
+
+## 🛠️ Technologies Used
+
+- **Programming Language:** Python  
+- **Libraries:**  
+  - NumPy  
+  - Pandas  
+  - Matplotlib  
+  - Seaborn  
+  - Scikit-learn  
+  - TensorFlow / PyTorch  
+- **Tools:**  
+  - Jupyter Notebook  
+  - Git & GitHub  
+
+---
 
 
 
